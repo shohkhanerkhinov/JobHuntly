@@ -99,21 +99,21 @@ const FeaturedJobs = () => {
     const getCategoryStyle = (category: string) => {
         switch (category.toLowerCase()) {
             case 'marketing':
-                return 'bg-[#FFFAEB] text-[#FFB836] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Yellow
+                return 'bg-[#FFFAEB] text-[#FFB836] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             case 'business':
-                return 'bg-[#F0F7FF] text-[#26A4FF] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Blue
+                return 'bg-[#F0F7FF] text-[#26A4FF] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             case 'technology':
-                return 'bg-[#FF65501A] text-[#FF6550] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Darker blue
+                return 'bg-[#FF65501A] text-[#FF6550] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             case 'human resource':
-                return 'bg-[#F0F7FF] text-[#26A4FF] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Same as design
+                return 'bg-[#F0F7FF] text-[#26A4FF] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             case 'sales':
-                return 'bg-[#FFF5F5] text-[#FF5630] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Red
+                return 'bg-[#FFF5F5] text-[#FF5630] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             case 'finance':
-                return 'bg-[#F5FEF8] text-[#12B76A] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Green
+                return 'bg-[#F5FEF8] text-[#12B76A] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             case 'engineering':
-                return 'bg-[#F5F3FF] text-[#7F56D9] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Purple
+                return 'bg-[#F5F3FF] text-[#7F56D9] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             case 'design':
-                return 'bg-[#F5FEF8] text-[#12B76A] text-[14px] px-[16px] py-[4px] rounded-full font-medium'; // Same as finance
+                return 'bg-[#F5FEF8] text-[#12B76A] text-[14px] px-[16px] py-[4px] rounded-full font-medium';
             default:
                 return 'bg-gray-100 text-gray-800 text-[14px] px-[16px] py-[4px] rounded-full font-medium';
         }
@@ -123,7 +123,7 @@ const FeaturedJobs = () => {
         <div className="container">
             <h1 className="text-[48px] font-bold mb-[48px]">Featured<span className='text-[#26A4FF]'>jobs</span></h1>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid mb-[72px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {jobCards.map(job => (
                     <div key={job.id}>
                         <div className='max-w-[274px] border p-[24px] border-[#D6DDEB] hover:shadow-[0_12px_24px_-6px_rgba(45,67,121,0.1)]'>
