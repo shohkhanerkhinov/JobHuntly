@@ -139,8 +139,8 @@ const FeaturedJobs = () => {
                                 <button className='text-[16px] font-[400] text-[#4640DE] border border-[#4640DE] py-[4px] px-[12px] hover:text-[#FFFFFF] hover:bg-[#4640DE]'>{job.button}</button>
                             </div>
                             <h3 className='text-[18px] font-[600] text-[#25324B] mt-[16px]'>{job.title}</h3>
-                            <div className='flex text-[#515B6F] text-[16px] font-[400] gap-[8px]'>
-                                {job.company}  <span className='text-[#7C8493]'>•</span>  {job.location}
+                            <div className='flex text-[#515B6F] text-[16px] font-[400] gap-[8px] '>
+                                {job.company}  <span className='text-[#7C8493]'>•</span>  <span className=' line-clamp-1 overflow-hidden text-ellipsis'>{job.location}</span>
                             </div>
                             <h2 className='text-[#7C8493] text-[16px] font-[400] mt-[16px] line-clamp-2 overflow-hidden text-ellipsis'>{job.description}</h2>
                             <div className='mt-[16px] flex flex-wrap gap-[8px]'>

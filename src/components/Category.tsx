@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 function Category() {
   const categories = [
-    { id: 1, title: 'Design', jobsAvailable: 235, icon: '/icon1.svg' },
-    { id: 2, title: 'Sales', jobsAvailable: 756, icon: '/icon2.svg' },
+    { id: 1, title: 'Design', jobsAvailable: 235, icon: '/Icon1.svg' },
+    { id: 2, title: 'Sales', jobsAvailable: 756, icon: '/Icon2.svg' },
     { id: 3, title: 'Marketing', jobsAvailable: 140, icon: '/Vector.svg' },
-    { id: 4, title: 'Finance', jobsAvailable: 325, icon: '/icon4.svg' },
-    { id: 5, title: 'Technology', jobsAvailable: 436, icon: '/icon5.svg' },
-    { id: 6, title: 'Engineering', jobsAvailable: 542, icon: '/icon6.svg' },
-    { id: 7, title: 'Business', jobsAvailable: 211, icon: '/icon7.svg' },
-    { id: 8, title: 'Human Resource', jobsAvailable: 346, icon: '/icon8.svg' },
+    { id: 4, title: 'Finance', jobsAvailable: 325, icon: '/Icon4.svg' },
+    { id: 5, title: 'Technology', jobsAvailable: 436, icon: '/Icon5.svg' },
+    { id: 6, title: 'Engineering', jobsAvailable: 542, icon: '/Icon6.svg' },
+    { id: 7, title: 'Business', jobsAvailable: 211, icon: '/Icon7.svg' },
+    { id: 8, title: 'Human Resource', jobsAvailable: 346, icon: '/Icon8.svg' },
   ];
 
   return (
