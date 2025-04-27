@@ -45,7 +45,7 @@ function Category() {
             <p className="text-[18px] flex gap-[16px] text-[#7C8493] mt-[12px] group-hover:text-white">
               {category.jobsAvailable} jobs available
               <Image
-                src="/iconright.svg"
+                src="/Iconright.svg"
                 width={24}
                 height={24}
                 alt="arrow"
