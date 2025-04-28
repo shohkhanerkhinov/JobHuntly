@@ -5,6 +5,8 @@ import Category from '@/components/Category'
 import CTA from '@/components/CTA'
 import FeaturedJobs from '@/components/Featuredjobs'
 import LatestJobs from '@/components/LatestJobs'
+import Footer from '@/components/Footer'
+
 function page() {
   return (
     <div>
@@ -14,6 +16,7 @@ function page() {
       <CTA></CTA>
       <FeaturedJobs></FeaturedJobs>
       <LatestJobs></LatestJobs>
+      <Footer></Footer>
     </div>
   )
 }
