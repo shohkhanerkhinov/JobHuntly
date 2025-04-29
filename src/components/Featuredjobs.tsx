@@ -124,32 +124,49 @@ const FeaturedJobs = () => {
             <h1 className="text-[32px] xs:text-[36px] sm:text-[40px] md:text-[44px] lg:text-[48px] font-bold mb-[24px] xs:mb-[32px] sm:mb-[40px] lg:mb-[48px]">
                 Featured<span className='text-[#26A4FF]'>jobs</span>
             </h1>
-            <div className="grid mb-[72px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid mb-12 md:mb-[72px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                 {jobCards.map(job => (
-                    <div key={job.id}>
-                        <div className='max-w-[274px] border p-[24px] border-[#D6DDEB] hover:shadow-[0_12px_24px_-6px_rgba(45,67,121,0.1)]'>
-                            <div className='flex justify-between items-start'>
+                    <div key={job.id} className="flex justify-center sm:justify-start">
+                        <div className='w-full max-w-[274px] border p-4 sm:p-[24px] border-[#D6DDEB] hover:shadow-[0_12px_24px_-6px_rgba(45,67,121,0.1)] transition-shadow duration-300'>
+                            <div className='flex justify-between items-start gap-2'>
                                 {job.image && (
-                                    <Image
-                                        src={job.image}
-                                        alt={`${job.company} logo`}
-                                        width={48}
-                                        height={48}
-                                    />
+                                    <div className="relative w-10 h-10 sm:w-12 sm:h-12">
+                                        <Image
+                                            src={job.image}
+                                            alt={`${job.company} logo`}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 )}
-                                <button className='text-[16px] font-[400] text-[#4640DE] border border-[#4640DE] py-[4px] px-[12px] hover:text-[#FFFFFF] hover:bg-[#4640DE]'>{job.button}</button>
+                                <button className='text-sm sm:text-[16px] font-[400] text-[#4640DE] border border-[#4640DE] py-1 px-2 sm:py-[4px] sm:px-[12px] hover:text-[#FFFFFF] hover:bg-[#4640DE] transition-colors duration-200 whitespace-nowrap'>
+                                    {job.button}
+                                </button>
                             </div>
-                            <h3 className='text-[18px] font-[600] text-[#25324B] mt-[16px]'>{job.title}</h3>
-                            <div className='flex text-[#515B6F] text-[16px] font-[400] gap-[8px] '>
-                                {job.company}  <span className='text-[#7C8493]'>•</span>  <span className=' line-clamp-1 overflow-hidden text-ellipsis'>{job.location}</span>
+
+                            <h3 className='text-base sm:text-[18px] font-[600] text-[#25324B] mt-3 sm:mt-[16px]'>
+                                {job.title}
+                            </h3>
+
+                            <div className='flex text-[#515B6F] text-sm sm:text-[16px] font-[400] gap-1 sm:gap-[8px] mt-1 sm:mt-0'>
+                                {job.company}
+                                <span className='text-[#7C8493]'>•</span>
+                                <span className='line-clamp-1 overflow-hidden text-ellipsis'>
+                                    {job.location}
+                                </span>
                             </div>
-                            <h2 className='text-[#7C8493] text-[16px] font-[400] mt-[16px] line-clamp-2 overflow-hidden text-ellipsis'>{job.description}</h2>
-                            <div className='mt-[16px] flex flex-wrap gap-[8px]'>
+
+                            <p className='text-[#7C8493] text-sm sm:text-[16px] font-[400] mt-3 sm:mt-[16px] line-clamp-2 overflow-hidden text-ellipsis'>
+                                {job.description}
+                            </p>
+
+                            <div className='mt-3 sm:mt-[16px] flex flex-wrap gap-1 sm:gap-[8px]'>
                                 {job.category.map((cat) => (
-                                    <span key={cat} className={`${getCategoryStyle(cat)} gap-[8px]`}>
+                                    <span key={cat} className={`${getCategoryStyle(cat)} text-xs sm:text-sm px-2 py-1`}>
                                         {cat}
                                     </span>
-                                ))}                            </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}
