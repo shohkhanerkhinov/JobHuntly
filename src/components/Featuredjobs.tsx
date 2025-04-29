@@ -61,7 +61,7 @@ const FeaturedJobs = () => {
             company: "ClassPass",
             location: "Manchester, UK",
             description: "ClassPass is looking for Product Designer to help us...",
-            category: [ "Marketing","Design"],
+            category: ["Marketing", "Design"],
             button: "Full Time"
         },
         {
@@ -71,7 +71,7 @@ const FeaturedJobs = () => {
             company: "Canva",
             location: "Ontario, Canada",
             description: "Canva is looking for Lead Engineer to help develop n ...",
-            category: [ "Design", "Business"],
+            category: ["Design", "Business"],
             button: "Full Time"
         },
         {
@@ -81,7 +81,7 @@ const FeaturedJobs = () => {
             company: "GoDaddy",
             location: "Marseille, France",
             description: "GoDaddy is looking for Brand Strategist to join the team...",
-            category: [ "Marketing"],
+            category: ["Marketing"],
             button: "Full Time"
         },
         {
@@ -91,7 +91,7 @@ const FeaturedJobs = () => {
             company: "Twitter",
             location: "San Diego, US",
             description: "Twitter is looking for Data Analyst to help team desi ...",
-            category: [ "Technology"],
+            category: ["Technology"],
             button: "Full Time"
         },
     ];
@@ -121,8 +121,9 @@ const FeaturedJobs = () => {
 
     return (
         <div className="container">
-            <h1 className="text-[48px] font-bold mb-[48px]">Featured<span className='text-[#26A4FF]'>jobs</span></h1>
-
+            <h1 className="text-[32px] xs:text-[36px] sm:text-[40px] md:text-[44px] lg:text-[48px] font-bold mb-[24px] xs:mb-[32px] sm:mb-[40px] lg:mb-[48px]">
+                Featured<span className='text-[#26A4FF]'>jobs</span>
+            </h1>
             <div className="grid mb-[72px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {jobCards.map(job => (
                     <div key={job.id}>

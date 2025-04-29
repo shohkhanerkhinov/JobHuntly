@@ -120,7 +120,7 @@ const LatestJobs = () => {
                     fill
                     style={{
                         objectFit: 'cover',
-                        objectPosition: 'right top', // Adjust as needed
+                        objectPosition: 'right top',
                         opacity: 0.6
                     }}
                     priority
@@ -129,17 +129,20 @@ const LatestJobs = () => {
             </div>
 
             <div className='container'>
-                <div className='flex flex-wrap justify-between items-end mb-12 pt-[72px]'>
-                    <h2 className="text-[48px] font-bold">Latest <span className='text-[#26A4FF]'>jobs open</span></h2>
-                    <span className="text-[#4640DE] text-[16px] font-medium flex items-center gap-2 cursor-pointer hover:underline">
+                <div className='flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-12 pt-12 md:pt-[72px]'>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold">
+                        Latest <span className='text-[#26A4FF]'>jobs open</span>
+                    </h2>
+                    <div className="text-[#4640DE] text-sm sm:text-base md:text-[16px] font-medium flex items-center gap-2 cursor-pointer hover:underline self-end sm:self-auto">
                         Show all jobs
                         <Image
                             src="/Iconright.svg"
                             alt="Arrow icon"
                             width={16}
                             height={16}
+                            className="w-3 h-3 sm:w-4 sm:h-4"
                         />
-                    </span>
+                    </div>
                 </div>
 
                 <div className="grid pb-[60px] grid-cols-1 sm:grid-cols-2 gap-6">

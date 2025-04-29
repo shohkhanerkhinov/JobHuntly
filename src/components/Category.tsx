@@ -15,11 +15,11 @@ function Category() {
 
   return (
     <div className='container mx-auto px-4 py-12 max-w-7xl'>
-      <div className='mt-[72px] flex justify-between items-end mb-12'>
-        <h2 className='text-[#25324B] font-semibold text-[48px] leading-[110%]'>
+      <div className='mt-12 md:mt-[72px] flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8 md:mb-12'>
+        <h2 className='text-[#25324B] font-semibold text-3xl sm:text-4xl md:text-[48px] leading-[110%]'>
           Explore by <span className='text-[#26A4FF]'>category</span>
         </h2>
-        <span className='text-[16px] text-[#4640DE] font-semibold cursor-pointer hover:underline'>
+        <span className='text-sm sm:text-base md:text-[16px] text-[#4640DE] font-semibold cursor-pointer hover:underline whitespace-nowrap self-end sm:self-auto'>
           Show all jobs →
         </span>
       </div>
